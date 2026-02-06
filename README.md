@@ -6,10 +6,10 @@ A command-line interface for [AgentMail](https://agentmail.to) - manage email in
 
 ```bash
 # Install globally
-npm install -g agentmail-cli
+npm install -g @stepandel/agentmail-cli
 
 # Or run directly with npx
-npx agentmail-cli
+npx @stepandel/agentmail-cli
 ```
 
 ## Configuration
