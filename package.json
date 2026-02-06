@@ -1,0 +1,39 @@
+{
+  "name": "agentmail-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for AgentMail - manage inboxes and messages from the command line",
+  "main": "dist/index.js",
+  "bin": {
+    "agentmail": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "agentmail",
+    "email",
+    "cli",
+    "inbox",
+    "messages"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "agentmail": "^0.2.11",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
