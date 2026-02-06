@@ -1,5 +1,5 @@
 {
-  "name": "agentmail-cli",
+  "name": "@stepandel/agentmail-cli",
   "version": "1.0.0",
   "description": "CLI tool for AgentMail - manage inboxes and messages from the command line",
   "main": "dist/index.js",
