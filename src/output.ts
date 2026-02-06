@@ -62,10 +62,12 @@ export function prettyPrint(data: unknown, indent = 0): void {
 
 function formatKey(key: string): string {
   // Convert camelCase or snake_case to Title Case
+  // Handle acronyms like "ID" properly (don't split them)
   return key
     .replace(/_/g, ' ')
-    .replace(/([A-Z])/g, ' $1')
+    .replace(/([a-z])([A-Z])/g, '$1 $2')  // Split on lowercase-to-uppercase transitions
     .replace(/^./, str => str.toUpperCase())
+    .replace(/\bId\b/g, 'ID')  // Fix common acronym
     .trim();
 }
 
